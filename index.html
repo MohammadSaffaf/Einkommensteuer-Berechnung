@@ -5,42 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <section>
-        <h1>Einkommensteuer-Rechner
-        </h1>
-        <form>
-            <div class="Steuerjahr">
-                <label for="">Steuerjahr</label>
-                <input type="number" name="" id="liste">
+    <!-- <img src="assets/img/17.png" alt=""> -->
+    <article class="d-flex justify-content-end">
+        <section>
+            <div class="img">
+                <!-- <img src="assets/img/14.png" alt=""> -->
 
+                <h1>Einkommensteuer-Rechner
+                </h1>
             </div>
-            <div class="person">
-                <input type="radio" name="Person" id="einperson" value="">
-                <label for="EinPerson">EinPerson</label>
-                <input type="radio" name="Person" id="zweiperson" onclick="myFunction()" value="">
-                <label for="ZweiPerson">ZweiPerson</label>
+            <form>
+                <div class="Steuerjahr">
+                    <label for="">Steuerjahr <span> (Wählen Sie Das Jahr)</span></label>
+                    <input type="number" name="" id="liste" min="2018" max="2020" placeholder="Jahr">
 
-            </div>
-            <div class="input-block">
-                <div>
-                    <input type="text" name="number" id="einkommen1" value="" placeholder="ErstePerson">
                 </div>
-                <div id="id-einkommen2">
-                    <input type="text" name="number" id="einkommen2" value="" placeholder="ZweitePerson">
+                <article class="einperson">
+                    <div class="person">
+                        <input type="radio" name="Person" id="einperson" value="" onclick="myFunction2()">
+                        <label for="EinPerson">EinPerson</label>
+                    </div>
+                    <div>
+                        <input type="text" name="number" id="einkommen1" value="" placeholder=""> €
+                    </div>
+                </article>
+
+
+
+                <div class="input-block">
+                    <div class="radio2">
+                        <input type="radio" name="Person" id="zweiperson" onclick="myFunction()" value="">
+                        <label for="ZweiPerson">ZweiPerson</label>
+                    </div>
+                    <div id="id-einkommen2">
+                        <input type="text" name="number" id="einkommen2" value=""> €
+                    </div>
+
                 </div>
 
-            </div>
+            </form>
+            <button onclick="Berechnen()" id="berechnen">BERECHNEN</button>
+            <h2>Ergebnis</h2>
 
-        </form>
-        <button onclick="Berechnen()" id="berechnen">Berechnen</button>
-        <h2>Ergebnis</h2>
-
-        <p id="result"></p>
-    </section>
+            <p id="result"></p>
+        </section>
+    </article>
 
     <script src="assets/js/main.js"></script>
 </body>
