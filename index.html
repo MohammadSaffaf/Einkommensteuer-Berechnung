@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <h1>Einkommensteuer-Rechner
+        </h1>
+        <form>
+            <div class="Steuerjahr">
+                <label for="">Steuerjahr</label>
+                <input type="number" name="" id="liste">
+
+            </div>
+            <div class="person">
+                <input type="radio" name="Person" id="einperson" value="">
+                <label for="EinPerson">EinPerson</label>
+                <input type="radio" name="Person" id="zweiperson" onclick="myFunction()" value="">
+                <label for="ZweiPerson">ZweiPerson</label>
+
+            </div>
+            <div class="input-block">
+                <div>
+                    <input type="text" name="number" id="einkommen1" value="" placeholder="ErstePerson">
+                </div>
+                <div id="id-einkommen2">
+                    <input type="text" name="number" id="einkommen2" value="" placeholder="ZweitePerson">
+                </div>
+
+            </div>
+
+        </form>
+        <button onclick="Berechnen()" id="berechnen">Berechnen</button>
+        <h2>Ergebnis</h2>
+
+        <p id="result"></p>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
