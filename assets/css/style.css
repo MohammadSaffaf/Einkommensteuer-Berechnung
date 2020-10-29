@@ -23,14 +23,15 @@ section {
   flex-direction: column;
   margin-top: 3%;
   margin-right: 4%;
-
-  height: 90vh;
+  text-align: center;
+  height: 85vh;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 8px;
 }
 h1 {
   padding-top: 4%;
   padding-bottom: 3%;
+  width: 100%;
 }
 .img {
   width: 100%;
@@ -86,15 +87,81 @@ button {
   height: 7vh;
   font-size: 25px;
   border-radius: 10px;
+  transition: all 0.5s linear;
+}
+button:hover {
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 form {
   border-bottom: 7px solid rgb(254, 219, 0);
 }
 h2 {
+  /* padding-top: 10%; */
   text-align: center;
+  border-top: 7px solid rgb(254, 219, 0);
 }
 p {
   text-align: center;
   font-size: 35px;
   color: white;
+}
+@media only screen and (width: 375px) {
+  section {
+    width: 95%;
+
+    margin-left: 10%;
+    margin-top: 15%;
+    margin-right: 2%;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .Steuerjahr {
+    font-size: 14px;
+    font-weight: bolder;
+    padding-right: 3%;
+    text-align: center;
+  }
+  .Steuerjahr input {
+    height: 4vh;
+    margin-right: 5%;
+    width: 22%;
+  }
+  .einperson {
+    width: 100%;
+
+    font-size: 15px;
+    padding-top: 7%;
+  }
+  #einkommen1 {
+    width: 35%;
+    margin-left: 53%;
+  }
+  #einkommen2 {
+    width: 35%;
+    margin-left: 57%;
+  }
+  .radio2 {
+    margin-left: 3%;
+  }
+  #id-einkommen2 {
+    margin-left: 0;
+  }
+
+  .input-block {
+    width: 100%;
+    font-size: 15px;
+    margin-left: 3%;
+    opacity: 0.2;
+    transition: all 0.5s linear;
+    padding-top: 3%;
+    padding-bottom: 7%;
+    margin-left: 0;
+  }
+  /* .input-block label {
+    color: violet;
+    margin-left: 20%;
+  } */
 }
