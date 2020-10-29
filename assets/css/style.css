@@ -24,7 +24,7 @@ section {
   margin-top: 3%;
   margin-right: 4%;
   text-align: center;
-  height: 85vh;
+  height: 90vh;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 8px;
 }
@@ -63,6 +63,12 @@ h1 {
   justify-content: space-around;
   font-size: 1.5rem;
   padding-top: 7%;
+}
+#einkommen1 {
+  width: 70%;
+}
+#einkommen2 {
+  width: 70%;
 }
 .input-block {
   display: flex;
@@ -106,7 +112,7 @@ p {
   font-size: 35px;
   color: white;
 }
-@media only screen and (width: 375px) {
+@media only screen and (max-width: 755px) {
   section {
     width: 95%;
 
