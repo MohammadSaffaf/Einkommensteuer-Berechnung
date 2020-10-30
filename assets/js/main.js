@@ -65,7 +65,7 @@ function Berechnen() {
             Est = 0.42 * zvE - 8963.74;
             Est = tax.toFixed(2);
                 result.innerHTML = Est + ' Euro';
-           } else {
+           } else if(270501 <= zvE ){
             Est = 0.45 * zvE - 17078.74;
             Est = Est.toFixed(2);
                result.innerHTML = Est + ' Euro';
@@ -96,7 +96,7 @@ function Berechnen() {
              tax = 0.42 * zvE - 8963.74;
              tax = tax.toFixed(2);
              result.innerHTML = tax + ' Euro';
-        } else {
+        } else if(265.327<= zvE ) {
             tax = 0.45 * zvE - 17078.74;
             tax = tax.toFixed(2);
             result.innerHTML = tax + ' Euro';
@@ -124,7 +124,7 @@ function Berechnen() {
          tax = 0.42 * zvE - 8621.75;
          tax = tax.toFixed(2);
          result.innerHTML = tax + ' Euro';
-    } else {
+    } else if(260.533<= zvE ) {
         tax = 0.45 * zvE - 16437.70;
         tax = tax.toFixed(2);
         result.innerHTML = tax + ' Euro';
